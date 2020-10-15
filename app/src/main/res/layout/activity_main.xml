@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/email_verfied_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Not Verfied"
+        android:layout_marginStart="90dp"
+        android:textSize="30dp"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/Verify_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:background="@color/antiquewhite"
+        android:text="Verify Now!"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/profile_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile"
+        android:textSize="30dp"
+        android:textColor="@color/gray"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/googleg_standard_color_18"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/image_icon"
+            android:layout_alignBottom="@id/full_name_tv"
+            />
+
+        <TextView
+            android:id="@+id/full_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/image_icon"
+            android:layout_toRightOf="@id/userIcon"
+            android:text="Full Name"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/profile_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/full_name_tv"
+            android:layout_toRightOf="@id/userIcon"
+            android:text="Your Name"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/googleg_standard_color_18"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/profile_name_tv"
+            android:layout_alignBottom="@id/email_logo"
+            />
+        <TextView
+            android:id="@+id/email_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name_tv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/email_address"
+            android:text="Email"
+            />
+        <TextView
+            android:id="@+id/profile_email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:layout_below="@id/email_logo"
+            android:layout_toRightOf="@id/email_address"
+            android:text="Your Email Address"
+            />
+        <ImageView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/googleg_standard_color_18"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/profile_email_tv"
+            android:layout_alignBottom="@id/phone"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_email_tv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/phone_number"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:text="Phone"
+            />
+        <TextView
+            android:id="@+id/profile_phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/phone_number"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:text="Phone Number"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/change_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="change profile"
+        android:textSize="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:onClick="Logout"
+        />
+    <Button
+        android:id="@+id/resetPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+</LinearLayout>
